@@ -61,6 +61,13 @@ Now, you have two different identities created, we will specify both in our glob
 Let me explain these settings. For the projects residing in the directory named ‘CompanyDirectory’, Git will use the [user] settings from the /.gitconfig_company file, which will be your company projects generally. In another case, all the projects belong to the directory named ‘Diego’, Git will use the [user] settings from the /.gitconfig_diego file.
 
 
+```
+[color="red"]
+
+Esta solución no he conseguido hacerla funcionar, por lo que habrá que acordarse de establecer la configuración --local para cada proyecto de empresa (ya que cada uno tendrá unas credenciales diferentes) y en el --global poner la configuración para los proyectos personales, de tal manera que siempre que estemos en un repositorio de proyecto de empresa, se aplicarán las configuraciones --local para cada uno de ellos y cuando se esté en un repositorio de un proyecto personal, se aplicarán las configuraciones --global que compartirán las credenciales de mi cuenta personal al tener todos los respositorios sobre ella
+```
+
+
 ## Git Config for using VS Code as default editor
 
 Here we have the commands to configure some settings to use VS Code as default editor for Git:
